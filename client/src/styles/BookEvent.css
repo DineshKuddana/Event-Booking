@@ -1,0 +1,59 @@
+.event-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.02);
+}
+
+.event-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.book-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.book-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.booking-form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.booking-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background-color: green;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.submit-btn:hover {
+  background-color: darkgreen;
+}
