@@ -17,7 +17,7 @@ const Event = ({ event }) => {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/api/bookings", {
+      const res = await fetch("https://event-booking-pytb.onrender.com/api/bookings", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

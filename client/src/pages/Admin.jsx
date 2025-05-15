@@ -17,7 +17,7 @@ const Admin = () => {
 
   const fetchBookings = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/bookings");
+      const res = await axios.get("https://event-booking-pytb.onrender.com/api/bookings");
       setBookings(res.data);
     } catch (error) {
       console.error("Failed to fetch bookings:", error);
@@ -26,7 +26,7 @@ const Admin = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/bookings/${id}`);
+      await axios.delete(`https://event-booking-pytb.onrender.com/api/bookings/${id}`);
       setBookings(bookings.filter((b) => b._id !== id));
     } catch (error) {
       console.error("Failed to delete booking:", error);
