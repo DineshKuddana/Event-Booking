@@ -18,6 +18,7 @@ const Admin = () => {
   const fetchBookings = async () => {
     try {
       const res = await axios.get("https://event-booking-pytb.onrender.com/api/bookings");
+      
       setBookings(res.data);
     } catch (error) {
       console.error("Failed to fetch bookings:", error);
